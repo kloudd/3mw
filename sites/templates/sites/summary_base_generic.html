@@ -1,0 +1,36 @@
+{% extends "sites/base_generic.html" %}
+
+{% block summary_class %}
+active
+{% endblock %}
+
+{% block content %}
+    <div class='container'>
+        <h1>
+            Summary - {% block name %}{% endblock %}
+        </h1>
+        <a href="/sites/summary/">
+            <button class="btn btn-primary {% block summary_sum_class %}{% endblock %}">
+                Sum
+            </button>
+        </a>
+        <a href="/sites/summary-average/">
+            <button class="btn btn-primary {% block summary_average_class %}{% endblock %}">
+                Average
+            </button>
+        </a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Site</th>
+                    <th>Value A</th>
+                    <th>Value B</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% block summary %}
+            {% endblock %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,83 @@
+[
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "name": "Demo Site"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+        "name": "ABC Site"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+        "name": "XYZ Site"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 1,
+    "fields": {
+        "site": 1,
+        "date": "2015-02-01",
+        "a": "12",
+        "b": "16"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 2,
+    "fields": {
+        "site": 1,
+        "date": "2015-02-03",
+        "a": "20",
+        "b": "90"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 3,
+    "fields": {
+        "site": 1,
+        "date": "2015-02-10",
+        "a": "20",
+        "b": "60"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 4,
+    "fields": {
+        "site": 2,
+        "date": "2018-12-15",
+        "a": "4",
+        "b": "66"
+    }
+},
+{
+    "model": "sites.sitedetail",
+    "pk": 5,
+    "fields": {
+        "site": 3,
+        "date": "2017-11-23",
+        "a": "70",
+        "b": "40"
+    }
+},
+    {
+    "model": "sites.sitedetail",
+    "pk": 6,
+    "fields": {
+        "site": 3,
+        "date": "2017-02-15",
+        "a": "69",
+        "b": "14"
+    }
+}
+]

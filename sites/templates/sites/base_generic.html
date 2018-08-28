@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>
+        3MW - Application Task
+    </title>
+    <link href="{% static 'sites/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav class='navbar navbar-default'>
+        <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="{% block sites_class %}{% endblock %} ">
+                <a href="/sites/sites">Sites</a>
+                </li>
+            <li class="{% block summary_class %}{% endblock %}">
+                <a href="/sites/summary">Summary</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+</body>
+
+</html>
